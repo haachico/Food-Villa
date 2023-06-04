@@ -72,8 +72,8 @@ body {
 
 .btns-list a {
   background-color: black;
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   color: white;
   display: flex;
@@ -84,11 +84,11 @@ body {
 }
 
 .btns-list div svg {
-  font-size: 24px; /* adjust the size of the logo */
+  font-size: 20px; /* adjust the size of the logo */
 }
 
 .btns-list div h4 {
-  font-size: 0.7rem;
+  font-size: 0.5rem;
 }
 
 .search--input {
