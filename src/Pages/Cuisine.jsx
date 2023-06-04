@@ -17,7 +17,7 @@ const Cuisine = () => {
 
       const result = await response.json();
       console.log(result);
-      setCuisne(result.results);
+      setCuisne(result?.results);
     } catch (err) {
       console.error(err);
     }
@@ -27,8 +27,8 @@ const Cuisine = () => {
     getCuisines(type);
   }, [type]);
 
-  const displayedCuisine = cuisine.filter((recipe) =>
-    recipe.title.toLowerCase().includes(searchText.toLowerCase())
+  const displayedCuisine = cuisine?.filter((recipe) =>
+    recipe?.title?.toLowerCase().includes(searchText.toLowerCase())
   );
   return (
     <motion.div
@@ -50,7 +50,7 @@ const Cuisine = () => {
         />
         <div className="cuisine--list">
           {displayedCuisine.length > 0 ? (
-            displayedCuisine.map((recipe) => <RecipeCard recipe={recipe} />)
+            displayedCuisine?.map((recipe) => <RecipeCard recipe={recipe} />)
           ) : (
             <h4>No recipe found.</h4>
           )}

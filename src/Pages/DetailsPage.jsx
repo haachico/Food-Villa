@@ -59,7 +59,13 @@ const DetailsPage = () => {
               Instructions
             </button>
           </div>
-          <div style={{ textAlign: "left", marginLeft: "3rem" }}>
+          <motion.div
+            style={{ textAlign: "left", marginLeft: "3rem" }}
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            exit={{ opacity: 0 }}
+            transform={{ duration: 0.5 }}
+          >
             {isActive === "ingredients" ? (
               <div>
                 <h3>Ingredients : </h3>
@@ -77,7 +83,7 @@ const DetailsPage = () => {
                 ></p>
               </>
             )}
-          </div>
+          </motion.div>
         </div>
       </div>
     </motion.div>
