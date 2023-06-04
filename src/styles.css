@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Noto+Serif:wght@400;700&family=Poppins:wght@100;400;500&family=Roboto:ital,wght@1,500&display=swap");
+
+body {
+  margin: 0% 10%;
+  height: 100vh;
+  /* width: 100%; */
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.recipe--list {
+  padding: 2rem;
+}
+.recipe--card {
+  width: 17rem;
+  margin: 0 2rem;
+  border-radius: 2rem;
+}
+.recipe--card img {
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+  /* object-fit: cover; */
+}
+
+.recipe--card img:hover {
+  transform: scale(1.1);
+}
+
+.recipe--card a {
+  color: black;
+  text-decoration: none;
+}
+.recipe--card p {
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.btns-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btns-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.cuisine--list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 3rem;
+}
+
+.back--btn {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+/* .back--btn a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+} */
+
+.btns-list a {
+  background-color: black;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.btns-list div svg {
+  font-size: 24px; /* adjust the size of the logo */
+}
+
+.btns-list div h4 {
+  font-size: 0.7rem;
+}
+
+.search--input {
+  width: 80%;
+  padding: 1rem;
+  background-color: red;
+  margin-top: 2rem;
+}
+
+.details {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 4rem;
+}
+
+.details p {
+  font-size: 15px;
+}
+
+.details img {
+  border-radius: 5px;
+}
+
+.details button {
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.details--buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.back--btn {
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.activeBtn {
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  margin-right: 1rem;
+}
+
+.details img {
+  width: 18rem;
+  height: 18rem;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  /* background-color: bisque; */
+  width: 100%;
+  text-decoration: underline;
+  letter-spacing: 6px;
+}
+
+.header a {
+  color: black;
+  text-decoration: none;
+}
